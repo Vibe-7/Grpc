@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package echo;
+
+option go_package = ".pb;pb";
+
+service EchoService {
+    rpc SayHello(HelloRequest) returns (HelloResponse);
+    rpc SayHelloStream(HelloRequest) returns (stream HelloResponse);
+    rpc SayHelloClientStream(stream HelloRequest) returns (HelloResponse);
+    rpc SayHelloBidirectional(stream HelloRequest) returns (stream HelloResponse);
+}
+
+message HelloRequest{
+  string message =1;
+}
+message HelloResponse{
+  string message =1;
+}
+

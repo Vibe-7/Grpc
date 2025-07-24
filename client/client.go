@@ -7,7 +7,7 @@ import (
 	"log"
 	"time"
 
-	pb "grps3/.pb" // Путь до вашего сгенерированного gRPC пакета
+	pb "github.com/Vibe-7/Grpc3/.pb" // Путь до вашего сгенерированного gRPC пакета
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"

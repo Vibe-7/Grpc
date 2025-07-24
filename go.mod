@@ -1,4 +1,4 @@
-module grps3
+module github.com/Vibe-7/Grpc3
 
 go 1.24.4
 
